@@ -1,7 +1,7 @@
 # NestJS + Docker Demo
 
-This is the first time I set up a NestJS project with Docker for Back-End development
-I'm not going to go too much in depth on NestJS or Docker since the main focus of this repo is to run a NestJS app environment with Docker.
+First time set up a NestJS project with Docker for Back-End development
+I'm not going to go too much in depth on NestJS or Docker since the main focus of this tutorial is to run a NestJS app environment with Docker and that's about it.
 
 In order to fully understand how the upcoming code works, I have to learn a basic understanding of the following subjects:
 -   Working with Terminal
@@ -23,15 +23,16 @@ I am going to choose npm for this tutorial, but you can choose yarn if you reall
 ```sh
 npm run start:dev
 ```
+I have added an exportable Model (e.g. Movie) to the service class file in the app.service.ts and app.controller.ts files to work with Docker.
 
-## Creating a new API service
+## Creating a API service
 
 I have created a API service that returns a hardcoded array of movies to test API after containerizing it with Docker.
 
 Run the project again using npm run start:dev and open the app in the browser at http://localhost:3000 or you can use Postman and create a new GET request for a more formatted an semantic workflow.
 The final result should look like this:
 
-``![image text](demo-readme.png)
+![image text](nestjs-docker\demo-readme.png)
 
 ##  Let's Dockerize this!
 Now that I have  Back-End API app up and running, let's containerize it using Docker for development.
@@ -57,5 +58,3 @@ That's all!
 ## License
 
 MIT
-
-
