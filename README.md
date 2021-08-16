@@ -10,8 +10,8 @@ To fully understand how the project works, I learned the basics of the following
 
 ## Let's get started!
 
-Create a new NestJS application
-Started by installing the NestJS CLI using npm on my machine and creating a new project:
+Create a new NestJS application.
+Started by installing the NestJS CLI using npm and creating a new project:
 
 ```sh
 npm i -g @nestjs/cli
