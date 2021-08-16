@@ -1,6 +1,6 @@
 # NestJS + Docker Demo
 
-This í the first time I set up a NestJS project with Docker for Back-End development
+This is the first time I set up a NestJS project with Docker for Back-End development
 I'm not going to go too much in depth on NestJS or Docker since the main focus of this tutorial is to run a NestJS app environment with Docker.
 
 In order to fully understand how the upcoming code works, I have to learn a basic understanding of the following subjects:
