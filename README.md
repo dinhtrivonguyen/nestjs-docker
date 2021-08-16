@@ -32,7 +32,7 @@ I have created a API service that returns a hardcoded array of movies to test AP
 Run the project again using npm run start:dev and open the app in the browser at http://localhost:3000 or you can use Postman and create a new GET request for a more formatted an semantic workflow.
 The final result should look like this:
 
-![image text](nestjs-docker\demo-readme.png)
+![image text](demo-readme.png)
 
 ##  Let's Dockerize this!
 Now that I have  Back-End API app up and running, let's containerize it using Docker for development.
