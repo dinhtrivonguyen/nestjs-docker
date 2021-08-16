@@ -43,7 +43,8 @@ Start by creating the following files in the project's root directory:
 -   docker-compose.yml - This file will be responsible for defining our containers, required images for the app other services, storage volumes, environment variables, etc...
 
 ##  Running the Docker containers
-Now I have defined Docker files so that I can run our app solely on Docker.
+This is what Magic I want to talk about.
+I'll probably need to learn how to run our app solely on Docker in the future. Now I have defined Docker files so that I can run our app solely on Docker.
 ... to start our app in production mode, you guessed it... run the following command in your terminal:
 ```sh
 docker-compose up prod
