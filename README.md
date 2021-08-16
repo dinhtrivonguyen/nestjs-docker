@@ -1,18 +1,17 @@
 # NestJS + Docker Demo
 
-This is the first time I set up a NestJS project with Docker for Back-End development
-I'm not going to go too much in depth on NestJS or Docker since the main focus of this tutorial is to run a NestJS app environment with Docker.
+This is my first time setting up a NestJS project with Docker for Back-End development so I won't go too deep into NestJS or Docker as the main focus of this repo is running the NestJS application environment with Docker.
 
-In order to fully understand how the upcoming code works, I have to learn a basic understanding of the following subjects:
--   Working with Terminal
--   JavaScript/TypeScript
--   How Docker works
+To fully understand how the project works, I learned the basics of the following subjects:
+- Working with terminal
+- JavaScript / TypeScript
+- How Docker works
 - ✨Magic ✨
 
-## Let's begin!
+## Let's get started!
 
-Creating a new NestJS application
-Start by installing the NestJS CLI using npm on your machine and create a new project:
+Create a new NestJS application
+Started by installing the NestJS CLI using npm on my machine and creating a new project:
 
 ```sh
 npm i -g @nestjs/cli
@@ -23,39 +22,34 @@ I am going to choose npm for this.
 ```sh
 npm run start:dev
 ```
-I have added an exportable Model (e.g. Movie) to the service class file in the app.service.ts and app.controller.ts files to work with Docker.
+I have added an Exportable Model: Movie to make the service class file in the app.service.ts and app.controller.ts files to work with Docker.
 
 ## Creating a API service
 
-I have created a API service that returns a hardcoded array of movies to test API after containerizing it with Docker.
+I've created an API service that returns a hardcoded array of movies to test the API after containing it using Docker.
 
-Run the project again using npm run start:dev and open the app in the browser at http://localhost:3000 or you can use Postman and create a new GET request for a more formatted an semantic workflow.
-The final result should look like this:
+Run the project again using npm run start: dev and open the app in the browser at http://localhost:3000 or I can use Postman and create a new GET request for the formatted workflow and more semantic.
+The final result will look like this:
 
 ![image text](demo-readme.png)
 
 ##  Let's Dockerize this!
-Now I have  Back-End API app up and running, let's containerize it using Docker for development.
+Now I have the Back-End API application up and running to contain it using Docker for development.
 
-Start by creating the following files in the project's root directory:
+Start by creating the following files in the project root directory:
 
--   Dockerfile - This file will be responsible for importing the Docker images, divide them into development and production environments, copying all of our files and install npm dependencies
--   docker-compose.yml - This file will be responsible for defining our containers, required images for the app other services, storage volumes, environment variables, etc...
+- Dockerfile - This file will be responsible for importing Docker images, splitting them into development and production environments, copying all our files and installing npm dependencies
+- docker-compos.yml - This file will be responsible for defining our container, the images required for the application of other services, storage space, environment variables, etc.
 
 ##  Running the Docker containers
-This is what Magic I want to talk about.
-I'll probably need to learn how to run our app solely on Docker in the future. Now I have defined Docker files so that I can run our app solely on Docker.
+This is what Magic I want to talk about. I'll probably need to learn how to run your app solely on Docker in the future.
 ... to start our app in production mode, you guessed it... run the following command in your terminal:
 ```sh
 docker-compose up prod
 ```
-Make a GET request yet again to http://localhost:3000 and... voilà! Should work as expected.
-
-P.S: If you want to ditch the terminal logging, you can run the container in a separate daemon using the -d flag like so:
-```sh
-docker-compose up -d prod
-```
+Make a GET request again to http://localhost:3000 and...
 That's all!
+
 ## License
 
 MIT
