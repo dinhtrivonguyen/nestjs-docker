@@ -35,7 +35,7 @@ The final result should look like this:
 ![image text](demo-readme.png)
 
 ##  Let's Dockerize this!
-Now that I have  Back-End API app up and running, let's containerize it using Docker for development.
+Now I have  Back-End API app up and running, let's containerize it using Docker for development.
 
 Start by creating the following files in the project's root directory:
 
@@ -43,7 +43,7 @@ Start by creating the following files in the project's root directory:
 -   docker-compose.yml - This file will be responsible for defining our containers, required images for the app other services, storage volumes, environment variables, etc...
 
 ##  Running the Docker containers
-Now that we have defined our Docker files, we can run our app solely on Docker.
+Now I have defined our Docker files so that I can run our app solely on Docker.
 ... to start our app in production mode, you guessed it... run the following command in your terminal:
 ```sh
 docker-compose up prod
