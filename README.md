@@ -1,7 +1,7 @@
 # NestJS + Docker Demo
 
 First time set up a NestJS project with Docker for Back-End development
-I'm not going to go too much in depth on NestJS or Docker since the main focus of this tutorial is to run a NestJS app environment with Docker and that's about it.
+I'm not going to go too much in depth on NestJS or Docker since the main focus of this tutorial is to run a NestJS app environment with Docker.
 
 In order to fully understand how the upcoming code works, I have to learn a basic understanding of the following subjects:
 -   Working with Terminal
@@ -18,7 +18,7 @@ Start by installing the NestJS CLI using npm on your machine and create a new pr
 npm i -g @nestjs/cli
 nest new nestjs-docker
 ```
-I am going to choose npm for this tutorial, but you can choose yarn if you really want to.
+I am going to choose npm for this.
 
 ```sh
 npm run start:dev
