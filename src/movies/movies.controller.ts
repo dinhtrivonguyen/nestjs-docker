@@ -12,8 +12,8 @@ import {
   
   @Controller('movies')
   export class MoviesController {
-    MoviesService: any;
-    constructor(private readonly moviesService: MoviesService) {}
+    /*MoviesService: any;*/
+    constructor(private readonly MoviesService: MoviesService) {}
   
     @Post()
     async addMovie(
@@ -31,7 +31,7 @@ import {
   
     @Get()
     async getAllMovies() {
-      const movies = await this.moviesService.getMovies();
+      const movies = await this.MoviesService.getMovies();
       return movies;
     }
   
@@ -47,13 +47,13 @@ import {
       @Body('description') prodDesc: string,
       @Body('year') prodYear: number,
     ) {
-      await this.moviesService.updateMovie(prodId, prodTitle, prodDesc, prodYear);
+      await this.MoviesService.updateMovie(prodId, prodTitle, prodDesc, prodYear);
       return null;
     }
   
     @Delete(':id')
     async  removeMovie(@Param('id') prodId: string) {
-        await this.moviesService.deleteMovie(prodId);
+        await this.MoviesService.deleteMovie(prodId);
         return null;
     }
   }

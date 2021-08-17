@@ -5,16 +5,15 @@ import { Movie } from './movie.model';
 
 @Injectable()
 export class MoviesService {
-  /*private movies: Movie[] = [];*/
-
-  constructor(@InjectModel('Movie') private readonly movieModel: Model <Movie> ) {}
+  private movies: Movie[] = [];
+  constructor(@InjectModel('Movie') private readonly movieModel: Model <Movie>) {} 
 
   async insertMovie(title: string, desc: string, year: number) {
-    const newMovie = new this.movieModel({
+   const newMovie = new this.movieModel({
       title, 
       description: desc, 
       year,
-    });
+    }); 
     const result = await newMovie.save();
     console.log(result);
     return result.id as string;
